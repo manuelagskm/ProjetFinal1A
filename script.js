@@ -147,9 +147,9 @@ const translations = {
 };
 
 const sources = [
-    "https://www.ameli.fr/assure/droits-demarches/europe-international/protection-sociale-france/vous-venez-etudier-en-france?utm_source=chatgpt.com",
+    "https://www.ameli.fr/assure/droits-demarches/europe-international/protection-sociale-france/vous-venez-etudier-en-france?utm_source=",
     "https://france-visas.gouv.fr/en/etudiant",
-    "https://www.etudiant.gouv.fr/fr/la-couverture-sante-pour-les-etudiants-internationaux-217?utm_source=chatgpt.com",
+    "https://www.etudiant.gouv.fr/fr/la-couverture-sante-pour-les-etudiants-internationaux-217?utm_source=",
     "https://www.avocat.fr/les-etudiants-etrangers-en-france",
     "https://www.smeno.com/blog/partir-etudier-a-letranger/etudiants-etrangers-arrivant-en-france-guide-pratique/"
 ];
