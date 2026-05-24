@@ -11,9 +11,10 @@
         <h1>personal assistant for foreign students</h1>
     </header>
     <main id="app">
+        <!-- Language Selection -->
         <div id="language-selection">
             <h2>Select your language / Seleccione su idioma / Choisissez votre langue / Chọn ngôn ngữ của bạn / 选择您的语言</h2>
-            <div class="lang-buttons">
+            <div class="buttons-grid">
                 <button onclick="selectLanguage('en')">English</button>
                 <button onclick="selectLanguage('es')">Español</button>
                 <button onclick="selectLanguage('fr')">Français</button>
@@ -21,11 +22,33 @@
                 <button onclick="selectLanguage('zh')">中文</button>
             </div>
         </div>
-        <div id="chat-container" style="display: none;">
-            <div id="chat-window"></div>
-            <div id="input-area">
-                <input type="text" id="user-input" placeholder="Type your message...">
-                <button id="send-btn">Send</button>
+
+        <!-- Main Content Area -->
+        <div id="main-content" style="display: none;">
+            <div id="residency-selection">
+                <h2 id="residency-title">Where are you from?</h2>
+                <div class="buttons-grid">
+                    <button id="btn-eu" onclick="selectResidency(true)">EU Country</button>
+                    <button id="btn-noneu" onclick="selectResidency(false)">Outside EU</button>
+                </div>
+            </div>
+
+            <div id="topics-area" style="display: none;">
+                <div class="buttons-grid">
+                    <button id="nav-visa" onclick="showTopic('visa')">Visa</button>
+                    <button id="nav-health" onclick="showTopic('health')">Health</button>
+                    <button id="nav-housing" onclick="showTopic('housing')">Housing</button>
+                    <button id="nav-legal" onclick="showTopic('legal')">Legal</button>
+                </div>
+                <div id="display-window">
+                    <div id="content-display">
+                        <p id="instruction-text">Select a topic to see information.</p>
+                    </div>
+                </div>
+                <div id="sources-footer">
+                    <p id="sources-text"><strong>Official Sources:</strong></p>
+                    <ul id="sources-list"></ul>
+                </div>
             </div>
         </div>
     </main>
